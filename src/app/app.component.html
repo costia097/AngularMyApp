@@ -13,11 +13,10 @@
   <div >
     {{responce}}
   </div>
-
-  <button class="btn btn-primary" [disabled]="isDisable" (click)="sendEmail(position)">SendEmail</button>
-  <label>
-    <input type="text" [(ngModel)]="position">
-  </label>
+  <div style="background-color: yellow">
+    <button class="btn btn-primary" [disabled]="isDisable" (click)="sendEmailOne()">SendEmailFirstWorker</button>
+    <button class="btn btn-primary" [disabled]="isDisable" (click)="sendEmailTwo()">SendEmailSecondWorker</button>
+  </div>
 </div>
 
 

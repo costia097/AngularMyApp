@@ -11,10 +11,15 @@ export class HelloService {
     return this.http.get('http://localhost:8080/check');
   }
 
-  sendEmail(position) {
-    this.http.get('http://localhost:8080/send' + '/' + position).subscribe(value => {
+  sendEmailFirstWorker() {
+    this.http.get('http://localhost:8080/send/0').subscribe(value => {
       console.log('Send' + value);
     });
   }
 
+  sendEmailSecondWorker() {
+    this.http.get('http://localhost:8080/send/1').subscribe(value => {
+      console.log('Send' + value);
+    });
+  }
 }

@@ -21,18 +21,21 @@ export class AppComponent {
     });
   }
 
-  sendEmail() {
-    if (this.position == null) {
-      return;
-    }
-    this.helloService.sendEmail(this.position);
+  sendEmailOne() {
+    this.helloService.sendEmailFirstWorker();
     this.isDisable = true;
-    this.disbleOnTimeButton();
+    this.disableOnTimeButton();
   }
 
-  disbleOnTimeButton() {
+  sendEmailTwo() {
+    this.helloService.sendEmailSecondWorker();
+    this.isDisable = true;
+    this.disableOnTimeButton();
+  }
+
+  disableOnTimeButton() {
     setTimeout(() => {
-      this.isDisable = false; }, 20000);
+      this.isDisable = false; }, 30000);
   }
 }
 
