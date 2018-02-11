@@ -4,10 +4,20 @@
   <label>
     <input type="text" [(ngModel)]="name">
   </label>
-  <h1>{{name}}</h1>
+  <button class="btn btn-primary" (click)="send()">Send</button>
+  <h1 > {{responce}}</h1>
   <app-server></app-server>
   <app-servers></app-servers>
   <app-servers></app-servers>
+
+  <div >
+    {{responce}}
+  </div>
+
+  <button class="btn btn-primary" [disabled]="isDisable" (click)="sendEmail(position)">SendEmail</button>
+  <label>
+    <input type="text" [(ngModel)]="position">
+  </label>
 </div>
 
 
