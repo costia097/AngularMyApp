@@ -1,3 +1,9 @@
-#divOne{
+.main-body{
+  height: 531px;
   background-color: bisque;
 }
+
+.info{
+  background-color: #0019ff;
+}
+

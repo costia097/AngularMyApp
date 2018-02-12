@@ -7,13 +7,17 @@ import {FormsModule} from '@angular/forms';
 import { ServerComponent } from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
 import {HttpClientModule} from '@angular/common/http';
+import { HeaderComponent } from './header/header.component';
+import {FooterComponent} from './footer/footer.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ServerComponent,
-    ServersComponent
+    ServersComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule, FormsModule, HttpClientModule

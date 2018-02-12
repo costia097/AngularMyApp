@@ -1,23 +1,9 @@
 
-<div id="divOne" style="text-align:center">
-  <h1>DInam</h1>
-  <label>
-    <input type="text" [(ngModel)]="name">
-  </label>
-  <button class="btn btn-primary" (click)="send()">Send</button>
-  <h1 > {{responce}}</h1>
-  <app-server></app-server>
-  <app-servers></app-servers>
-  <app-servers></app-servers>
+<app-header></app-header>
 
-  <div >
-    {{responce}}
-  </div>
-  <div style="background-color: yellow">
-    <button class="btn btn-primary" [disabled]="isDisable" (click)="sendEmailOne()">SendEmailFirstWorker</button>
-    <button class="btn btn-primary" [disabled]="isDisable" (click)="sendEmailTwo()">SendEmailSecondWorker</button>
-  </div>
+<div class="row">
+  <div class="col-sm-9 main-body">Main body</div>
+  <div class="col-sm-3 info">Info</div>
 </div>
 
-
-
+<app-footer></app-footer>
