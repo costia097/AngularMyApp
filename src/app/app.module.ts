@@ -9,6 +9,9 @@ import { ServersComponent } from './servers/servers.component';
 import {HttpClientModule} from '@angular/common/http';
 import { HeaderComponent } from './header/header.component';
 import {FooterComponent} from './footer/footer.component';
+import { MenuComponent } from './menu/menu.component';
+import {routes} from './app.router';
+import { MenuOneComponent } from './menu-one/menu-one.component';
 
 
 @NgModule({
@@ -17,10 +20,12 @@ import {FooterComponent} from './footer/footer.component';
     ServerComponent,
     ServersComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    MenuComponent,
+    MenuOneComponent
   ],
   imports: [
-    BrowserModule, FormsModule, HttpClientModule
+    BrowserModule, FormsModule, HttpClientModule, routes
   ],
   providers: [],
   bootstrap: [AppComponent]
